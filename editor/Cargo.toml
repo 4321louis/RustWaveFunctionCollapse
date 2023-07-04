@@ -1,0 +1,10 @@
+
+[package]
+name = "editor"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+fyrox = "0.30.0"
+fyroxed_base = "0.17.0"
+RustWaveFunctionCollapse = { path = "../game" }
