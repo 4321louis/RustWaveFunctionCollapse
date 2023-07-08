@@ -66,6 +66,114 @@
         drag_speed: 0.01,
         zoom_speed: 1.0,
         camera_settings: {
+            ".\\data\\scene.rgs": (
+                position: [
+                    0.0,
+                    1.0,
+                    -4.2999997,
+                ],
+                yaw: 0.0,
+                pitch: 0.0,
+            ),
+            ".\\data\\tiles\\WaterSideRight.rgs": (
+                position: [
+                    0.0,
+                    1.0,
+                    -3.0,
+                ],
+                yaw: 0.0,
+                pitch: 0.0,
+            ),
+            ".\\data\\tiles\\WaterSideLeft.rgs": (
+                position: [
+                    0.0,
+                    1.0,
+                    -3.0,
+                ],
+                yaw: 0.0,
+                pitch: 0.0,
+            ),
+            ".\\data\\tiles\\WaterICBotLeft.rgs": (
+                position: [
+                    0.0,
+                    1.0,
+                    -3.0,
+                ],
+                yaw: 0.0,
+                pitch: 0.0,
+            ),
+            ".\\data\\tiles\\WaterICBotRight.rgs": (
+                position: [
+                    0.0,
+                    1.0,
+                    -3.0,
+                ],
+                yaw: 0.0,
+                pitch: 0.0,
+            ),
+            ".\\data\\tiles\\WaterSideTop.rgs": (
+                position: [
+                    0.0,
+                    1.0,
+                    -3.0,
+                ],
+                yaw: 0.0,
+                pitch: 0.0,
+            ),
+            ".\\data\\tiles\\Land.rgs": (
+                position: [
+                    0.0,
+                    1.0,
+                    -3.0,
+                ],
+                yaw: 0.0,
+                pitch: 0.0,
+            ),
+            ".\\data\\tiles\\WaterOCBotLeft.rgs": (
+                position: [
+                    0.0,
+                    1.0,
+                    -3.0,
+                ],
+                yaw: 0.0,
+                pitch: 0.0,
+            ),
+            ".\\data\\tiles\\WaterSideBot.rgs": (
+                position: [
+                    0.0,
+                    1.0,
+                    -3.0,
+                ],
+                yaw: 0.0,
+                pitch: 0.0,
+            ),
+            ".\\data\\tiles\\WaterOCTopRight.rgs": (
+                position: [
+                    0.0,
+                    1.0,
+                    -3.0,
+                ],
+                yaw: 0.0,
+                pitch: 0.0,
+            ),
+            ".\\data\\tiles\\WaterOCBotRight.rgs": (
+                position: [
+                    0.0,
+                    1.0,
+                    -3.0,
+                ],
+                yaw: 0.0,
+                pitch: 0.0,
+            ),
+            ".\\data\\tiles\\WaterICTopLeft.rgs": (
+                position: [
+                    0.0,
+                    1.0,
+                    -3.0,
+                ],
+                yaw: 0.0,
+                pitch: 0.0,
+            ),
             "data/scene.rgs": (
                 position: [
                     -0.7728626,
@@ -74,6 +182,33 @@
                 ],
                 yaw: 0.24999984,
                 pitch: 0.23000012,
+            ),
+            ".\\data\\tiles\\WaterICTopRight.rgs": (
+                position: [
+                    0.0,
+                    1.0,
+                    -3.0,
+                ],
+                yaw: 0.0,
+                pitch: 0.0,
+            ),
+            ".\\data\\tiles\\Water.rgs": (
+                position: [
+                    0.0,
+                    1.0,
+                    -3.0,
+                ],
+                yaw: 0.0,
+                pitch: 0.0,
+            ),
+            ".\\data\\tiles\\WaterOCTopLeft.rgs": (
+                position: [
+                    0.0,
+                    1.0,
+                    -3.0,
+                ],
+                yaw: 0.0,
+                pitch: 0.0,
             ),
         },
     ),
@@ -229,6 +364,20 @@
     recent: (
         scenes: [
             "data/scene.rgs",
+            "data/tiles/Land.rgs",
+            "data/tiles/Water.rgs",
+            "data/tiles/WaterICBotLeft.rgs",
+            "data/tiles/WaterICBotRight.rgs",
+            "data/tiles/WaterICTopLeft.rgs",
+            "data/tiles/WaterICTopRight.rgs",
+            "data/tiles/WaterOCBotLeft.rgs",
+            "data/tiles/WaterOCBotRight.rgs",
+            "data/tiles/WaterOCTopLeft.rgs",
+            "data/tiles/WaterOCTopRight.rgs",
+            "data/tiles/WaterSideBot.rgs",
+            "data/tiles/WaterSideLeft.rgs",
+            "data/tiles/WaterSideRight.rgs",
+            "data/tiles/WaterSideTop.rgs",
         ],
     ),
     windows: (
@@ -237,7 +386,7 @@
             -8.0,
         ],
         window_size: [
-            1858.0,
+            1849.0,
             1057.0,
         ],
     ),

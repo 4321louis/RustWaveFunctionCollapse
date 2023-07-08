@@ -67,22 +67,21 @@ impl ScriptTrait for Player {
     // Called every frame at fixed rate of 60 FPS.
     fn on_update(&mut self, context: &mut ScriptContext) {
         //movement
-        let speed = 2.0;
+        let mut speed = 1.35;
         if let Some(rigid_body) = context.scene.graph[context.handle].cast_mut::<RigidBody>() {
-            let x_speed = match (self.move_left,self.move_right,self.move_up!=self.move_down) {
-                (true, false, true) => speed/(2_f32).sqrt(),
-                (false, true, true) => -speed/(2_f32).sqrt(),
-                (true, false, false) => speed,
-                (false, true, false) => -speed,
+            
+            if self.move_up!=self.move_down && self.move_right!=self.move_left {
+                speed /= 2_f32.sqrt();
+            }
+
+            let directed_speed = |forward,backward| match (forward,backward) {
+                (true, false) => speed,
+                (false, true) => -speed,
                 _ => 0.0,
             };
-            let y_speed = match (self.move_up,self.move_down,self.move_right!=self.move_left) {
-                (true, false, true) => speed/(2_f32).sqrt(),
-                (false, true, true) => -speed/(2_f32).sqrt(),
-                (true, false, false) => speed,
-                (false, true, false) => -speed,
-                _ => 0.0,
-            };
+
+            let x_speed = directed_speed(self.move_left,self.move_right);
+            let y_speed = directed_speed(self.move_up,self.move_down);
             rigid_body.set_lin_vel(Vector2::new(x_speed, y_speed));
     
             //sprite direction
@@ -122,10 +121,7 @@ impl ScriptTrait for Player {
                     sprite.set_uv_rect(
                         current_animation
                         .current_frame_uv_rect()
-                        // .cloned()
                             .unwrap_or_default()
-                            // .0,
-                            //TODO:wtf
                     );
                 }
             }

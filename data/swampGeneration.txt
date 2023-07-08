@@ -1,21 +1,18 @@
-Water.png 120 False Water Water Water Water False False
+data/tiles/Water.rgs 120 Water Water Water Water
 
-Land.png 80 False Land Land Land Land True True
+data/tiles/Land.rgs 80 Land Land Land Land
 
-WaterSideBot.png 2 False Water RWater ThinLand LWater False False
-WaterSideLeft.png 2 False LWater Water RWater ThinLand False False
-WaterSideTop.png 2 False ThinLand LWater Water RWater False False
-WaterSideRight.png 2 False RWater ThinLand LWater Water False False
+data/tiles/WaterSideBot.rgs 2 Water RWater ThinLand LWater
+data/tiles/WaterSideLeft.rgs 2 LWater Water RWater ThinLand
+data/tiles/WaterSideTop.rgs 2 ThinLand LWater Water RWater
+data/tiles/WaterSideRight.rgs 2 RWater ThinLand LWater Water
 
-WaterOCBotLeft.png 2 False Water Water RWater LWater False False
-WaterOCBotRight.png 2 False Water RWater LWater Water False False
-WaterOCTopLeft.png 2 False LWater Water Water RWater False False
-WaterOCTopRight.png 2 False RWater LWater Water Water False False
+data/tiles/WaterOCBotLeft.rgs 2 Water Water RWater LWater
+data/tiles/WaterOCBotRight.rgs 2 Water RWater LWater Water
+data/tiles/WaterOCTopLeft.rgs 2 LWater Water Water RWater
+data/tiles/WaterOCTopRight.rgs 2 RWater LWater Water Water
 
-
-WaterICBotLeft.png 3 False LWater RWater ThinLand ThinLand False False
-WaterICBotRight.png 3 False RWater ThinLand ThinLand LWater False False
-WaterICTopLeft.png 3 False ThinLand LWater RWater ThinLand False False
-WaterICTopRight.png 3 False ThinLand ThinLand LWater RWater False False
-
-Rock.png 5 False Land Land Land Land False False
+data/tiles/WaterICBotLeft.rgs 3 LWater RWater ThinLand ThinLand
+data/tiles/WaterICBotRight.rgs 3 RWater ThinLand ThinLand LWater
+data/tiles/WaterICTopLeft.rgs 3 ThinLand LWater RWater ThinLand
+data/tiles/WaterICTopRight.rgs 3 ThinLand ThinLand LWater RWater
